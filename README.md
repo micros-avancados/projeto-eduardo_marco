@@ -9,4 +9,5 @@ O projeto irá consistir em um sistema de automação residencial, utilizando a 
 **Material utilizado:**
 - Raspberry Pi 3;  
 - Soquetes Sonoff;  
+- Microfone?  
 - mais será adicionando no decorrer do projeto;

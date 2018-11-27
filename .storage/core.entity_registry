@@ -1,0 +1,53 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": "9ab6874322bd48d69be022306c2234ab",
+                "device_id": "928a031218ff49e7805e3bb5fed60251",
+                "disabled_by": null,
+                "entity_id": "media_player.bedroom_tv",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "80ff5206-fd88-9257-4e27-ac332d78bd65"
+            },
+            {
+                "config_entry_id": "9ab6874322bd48d69be022306c2234ab",
+                "device_id": "fdf4fa59232e45cd8b3042f1185a9d2b",
+                "disabled_by": null,
+                "entity_id": "media_player.marcos_bedroom",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "84b1d29a-d87b-0255-5f76-e7f38c414c44"
+            },
+            {
+                "config_entry_id": "9ab6874322bd48d69be022306c2234ab",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.all_speakers",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "9d603678-1751-4d76-a594-da834254f26a"
+            },
+            {
+                "config_entry_id": "9ab6874322bd48d69be022306c2234ab",
+                "device_id": "8923d854ebc8423eb71abfad37048cac",
+                "disabled_by": null,
+                "entity_id": "media_player.living_room_tv",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "e7373de4-9b69-c204-eed4-c5d08b55a42a"
+            },
+            {
+                "config_entry_id": "9ab6874322bd48d69be022306c2234ab",
+                "device_id": "958cc00ce47a4846a2c9b53b482273aa",
+                "disabled_by": null,
+                "entity_id": "media_player.living_room_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "ee02daf1-83af-5b0d-726a-89e3912f3b77"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

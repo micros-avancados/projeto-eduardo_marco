@@ -1,0 +1,4 @@
+2018-11-26 23:45:17 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=2 from 2018-11-26 23:16:48.863964)
+2018-11-26 23:45:24 ERROR (MainThread) [homeassistant.components.sensor.yr] Retrying in 20 minutes: Cannot connect to host aa015h6buqvih86i1.api.met.no:443 ssl:None [Try again]
+2018-11-27 00:31:40 ERROR (SyncWorker_10) [homeassistant.components.light.yeelight] Unable to update bulb status: Bulb closed the connection.
+2018-11-27 00:45:20 ERROR (MainThread) [homeassistant.components.updater] Got unexpected response: None

@@ -1,0 +1,80 @@
+{
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "9ab6874322bd48d69be022306c2234ab"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "928a031218ff49e7805e3bb5fed60251",
+                "identifiers": [
+                    [
+                        "cast",
+                        "80ff5206fd8892574e27ac332d78bd65"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Chromecast",
+                "name": "Bedroom TV",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "9ab6874322bd48d69be022306c2234ab"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "fdf4fa59232e45cd8b3042f1185a9d2b",
+                "identifiers": [
+                    [
+                        "cast",
+                        "84b1d29ad87b02555f76e7f38c414c44"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home Mini",
+                "name": "Marco's Bedroom",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "9ab6874322bd48d69be022306c2234ab"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "8923d854ebc8423eb71abfad37048cac",
+                "identifiers": [
+                    [
+                        "cast",
+                        "e7373de49b69c204eed4c5d08b55a42a"
+                    ]
+                ],
+                "manufacturer": "Sony",
+                "model": "BRAVIA 4K GB",
+                "name": "Living Room TV",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "9ab6874322bd48d69be022306c2234ab"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "958cc00ce47a4846a2c9b53b482273aa",
+                "identifiers": [
+                    [
+                        "cast",
+                        "ee02daf183af5b0d726a89e3912f3b77"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home Mini",
+                "name": "Living Room speaker",
+                "sw_version": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

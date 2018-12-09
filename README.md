@@ -10,5 +10,13 @@ Serão implementadas automações do tipo: "Ligar luzes quando o sol se pôr" ou
 **Material utilizado:**
 - Raspberry Pi 3;  
 - Soquetes Sonoff;  
-- Microfone?  
-- mais será adicionando no decorrer do projeto;
+- Lâmpada Yeelight Color;  
+- Chromecast;  
+- Aplicativo 'GPS Logger' (Android);  
+  
+### Algumas das funções implementadas  
+- Configurado um servidor DNS (DuckDNS), a fim de possibilitar o acesso via internet à interface do Home Assistant, mesmo sem um IP fixo, através do endereço 'https://smahassio.duckdns.org:8123';  
+- Efetuadas integrações com os seguintes dispositivos e serviços: Yeelight Color Bulb, Soquetes Sonoff, IFTTT (usando Webhooks), Google Assistant, app GPSLogger, Google Home Mini, Chromecast, Android TV;  
+- Criadas automações de acordo com nascer e pôr do sol, bem como zonas (se alguém sai da zona da casa, as luzes se desligam, por exemplo);  
+- Criada integração com o Spotify, tornando o próprio Hass.io um dispositivo Spotify Connect.  
+- Dentre outras.

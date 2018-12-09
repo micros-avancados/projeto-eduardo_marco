@@ -1,2 +1,16 @@
 sensor.yr_symbol:
   friendly_name: Tempo
+media_player.bedroom_tv:
+  friendly_name: Chromecast do Quarto
+media_player.living_room_tv:
+  friendly_name: TV da Sala
+media_player.marcos_bedroom:
+  friendly_name: Google Home do Quarto
+media_player.living_room_speaker:
+  friendly_name: Google Home da Sala
+media_player.all_speakers:
+  friendly_name: Todos alto-falantes
+device_tracker.0036766429:
+  friendly_name: Marco
+device_tracker.ce0917196a4acc4f0c7e:
+  friendly_name: Eduardo

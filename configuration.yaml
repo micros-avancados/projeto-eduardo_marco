@@ -1,21 +1,36 @@
+
+# Este arquivo armazena a maior parte das configurações do Home Assistant, como integrações, dispositivos, etc.
+# Está escrita em YAML, uma linguagem de marcação simplificada, semelhante ao XML.
+
+
+# Informações sobre o acesso ao Home Assistant via web, foi utilizado um serviço de DNS gratuito,
+# a fim de deixá-lo disponível na internet sem um IP fixo. Também foi utilizado uma ferramenta 
+# para SSL, para garantir a segurança da conexão.
 http:
   base_url: smahassio.duckdns.org:8123
   ssl_certificate: /ssl/fullchain.pem
   ssl_key: /ssl/privkey.pem
+# Essa senha é utilizada por algumas integrações, bem como pode ser usada para login, como é crítica,
+# foi armazenada no arquivo 'secrets.yaml', o qual não foi comittado para o git.
+  api_password: !secret api_password
+# Por questão de segurança, o acesso de um IP que tentar logar mais de 5 vezes com uma senha incorreta,
+# será bloqueado permanentemente (ou até ser desbloqueado manualmente)
+  ip_ban_enabled: true
+  login_attempts_threshold: 5
 
 homeassistant:
-  # Name of the location where Home Assistant is running
+  # Nome do local onde o Home Assistant está rodando
   name: Casa do Marco
-  # Location required to calculate the time the sun rises and sets
+  # Localização do endereço, usado para cálculo do nascer e pôr do sol
   latitude: -29.447146
   longitude: -51.986468
-  # Impacts weather/sunrise data (altitude above sea level in meters)
+  # Elevação do local, a qual impacta na previsão do tempo e nascer/pôr do sol
   elevation: 95
-  # metric for Metric, imperial for Imperial
+  # Sistema de medidad utilizado
   unit_system: metric
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  # Fuso Horário
   time_zone: America/Sao_Paulo
-  # Customization file
+  # Arquivo de customização
   customize: !include customize.yaml
 
 # Show links to resources in log and frontend
@@ -54,16 +69,32 @@ map:
 # Track the sun
 sun:
 
+# Lâmpadas
 light:
   - platform: yeelight
     devices:
       192.168.1.101:
         name: Luminária do Quarto
-        
 
-# Sensors
+# Interruptores SonOff
+# Foi feita uma integração com o WebHooks do IFTTT, usando a plataforma 'command_line' do Hass.io,
+# optamos por colocar os links de cada comando no arquivo secrets, pois em posse deles qualquer pessoa
+# teria acesso a senha do IFTTT e a alguns comandos deste.
+switch:
+  - platform: command_line
+    switches:
+        livingroom:
+            command_on: !secret ifttt_ligar_sala
+            command_off: !secret ifttt_desligar_quarto
+            friendly_name: Lâmpada da Sala
+        bedroom:
+            command_on: !secret ifttt_ligar_quarto
+            command_off: !secret ifttt_desligar_quarto
+            friendly_name: Lâmpada da Quarto (teto)
+
+# Sensores
 sensor:
-  # Weather prediction
+  # Previsão do Tempo
   - platform: yr
 
 # Text to speech
@@ -73,6 +104,16 @@ tts:
 # Cloud
 cloud:
 
+# Integração com o IFTTT, a senha do Webhooks é mantida no arquvio 'secrets.yaml'
+ifttt: 
+   key: !secret ifttt_key
+
+# Configuração para o GPS Logger, a senha é mantido no arquivo 'secrets.yaml'   
+device_tracker:
+  - platform: gpslogger
+    password: !secret gpslogger_password
+
+# Include dos arquivos auxiliares
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml

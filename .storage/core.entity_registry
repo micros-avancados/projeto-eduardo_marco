@@ -45,6 +45,105 @@
                 "name": null,
                 "platform": "cast",
                 "unique_id": "ee02daf1-83af-5b0d-726a-89e3912f3b77"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.protection_window",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_uv_protection_window"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.skin_type_6_safe_exposure_time",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_safe_exposure_time_type_6"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.skin_type_1_safe_exposure_time",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_safe_exposure_time_type_1"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.current_uv_index",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_current_uv_index"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.current_uv_level",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_current_uv_level"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.skin_type_2_safe_exposure_time",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_safe_exposure_time_type_2"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.skin_type_5_safe_exposure_time",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_safe_exposure_time_type_5"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.skin_type_3_safe_exposure_time",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_safe_exposure_time_type_3"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.current_ozone_level",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_current_ozone_level"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.skin_type_4_safe_exposure_time",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_safe_exposure_time_type_4"
+            },
+            {
+                "config_entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.max_uv_index",
+                "name": null,
+                "platform": "openuv",
+                "unique_id": "-29.447146_-51.986468_max_uv_index"
             }
         ]
     },

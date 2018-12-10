@@ -96,6 +96,24 @@ switch:
 sensor:
   # Previsão do Tempo
   - platform: yr
+  # Velocidade da conexão (medida de hora em hora)
+  - platform: speedtest
+    monitored_conditions:
+      - ping
+      - download
+      - upload
+  # Tempo de viagem fornecido pelo Waze
+  - platform: waze_travel_time
+    origin: zone.home
+    destination: zone.univates
+    region: 'BR'
+  # Estimativa de preço pelo Uber
+  - platform: uber
+    start_latitude: -29.447146
+    start_longitude: -51.986468
+    end_latitude: -29.444921
+    end_longitude: -51.954886
+    server_token: !secret uber_token
 
 # Text to speech
 tts:
@@ -125,10 +143,35 @@ zone:
     longitude: -51.986468
     radius: 250
     icon: mdi:home
-    
+
+# Previsão do tempo detalhada, usando a API DarkSky    
 weather:
   - platform: darksky
     api_key: !secret darksky_key
+
+# Detalhes do nível de radiação UV, usando a API OpenUV    
+openuv:
+  api_key: !secret openuv_key
+  binary_sensors:
+    monitored_conditions:
+      - uv_protection_window
+  sensors:
+    monitored_conditions:
+      - current_ozone_level
+      - current_uv_index
+      - current_uv_level
+      - max_uv_index
+
+# TV da Sala (controle remoto)
+media_player:
+  - platform: braviatv
+    host: 192.168.1.103
+
+# Possibilita o uso do serviço WakeOnLan para automações, etc.
+wake_on_lan:
+
+# Ativa uma lista de compras, editável via voz ou texto
+shopping_list:
 
 # Include dos arquivos auxiliares
 group: !include groups.yaml

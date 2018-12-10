@@ -20,3 +20,15 @@
   - service: light.turn_off
   - data: {}
     service: switch.turn_off
+- id: '1544475460922'
+  alias: Ligar o PC ao chegar em casa
+  trigger:
+  - entity_id: device_tracker.0036766429
+    event: enter
+    platform: zone
+    zone: zone.home
+  condition: []
+  action:
+  - data:
+      mac: 94:de:80:7f:85:79
+    service: wake_on_lan.send_magic_packet

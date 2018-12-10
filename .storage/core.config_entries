@@ -20,6 +20,37 @@
                 "source": "user",
                 "title": "IFTTT Webhook",
                 "version": 1
+            },
+            {
+                "connection_class": "cloud_poll",
+                "data": {
+                    "api_key": "dcc35c6c55a124aa357df5bb18ed595a",
+                    "binary_sensors": {
+                        "monitored_conditions": [
+                            "uv_protection_window"
+                        ]
+                    },
+                    "scan_interval": 1800,
+                    "sensors": {
+                        "monitored_conditions": [
+                            "current_ozone_level",
+                            "current_uv_index",
+                            "current_uv_level",
+                            "max_uv_index",
+                            "safe_exposure_time_type_1",
+                            "safe_exposure_time_type_2",
+                            "safe_exposure_time_type_3",
+                            "safe_exposure_time_type_4",
+                            "safe_exposure_time_type_5",
+                            "safe_exposure_time_type_6"
+                        ]
+                    }
+                },
+                "domain": "openuv",
+                "entry_id": "3d3d8ca640514ec5ad6bb9d0764e700e",
+                "source": "import",
+                "title": "-29.447146, -51.986468",
+                "version": 1
             }
         ]
     },

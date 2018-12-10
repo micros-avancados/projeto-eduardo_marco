@@ -106,7 +106,7 @@ sensor:
   - platform: waze_travel_time
     origin: zone.home
     destination: zone.univates
-    region: 'BR'
+    region: 'US'
   # Estimativa de preço pelo Uber
   - platform: uber
     start_latitude: -29.447146

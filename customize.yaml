@@ -44,3 +44,7 @@ sensor.max_uv_index:
   friendly_name: Índice UV Máximo (no dia)
 binary_sensor.protection_window:
   friendly_name: Proteção UV Necessária?
+sensor.google_travel_time__driving:
+  friendly_name: 'Tempo de viagem: Casa - Univates'
+sensor.waze_travel_time:
+  hidden: true

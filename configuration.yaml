@@ -104,8 +104,8 @@ sensor:
       - upload
   # Tempo de viagem fornecido pelo Waze
   - platform: waze_travel_time
-    origin: zone.home
-    destination: zone.univates
+    origin: -29.447146,-51.986468
+    destination: -29.444921,-51.954886
     region: 'US'
   # Estimativa de preço pelo Uber
   - platform: uber
@@ -114,6 +114,11 @@ sensor:
     end_latitude: -29.444921
     end_longitude: -51.954886
     server_token: !secret uber_token
+  # Tempo de viagem fornecido pelo Google Maps
+  - platform: google_travel_time
+    api_key: !secret google_api
+    origin: -29.447146,-51.986468
+    destination: -29.444921,-51.954886
 
 # Text to speech
 tts:

@@ -1,3 +1,5 @@
-2018-12-09 00:11:06 WARNING (MainThread) [homeassistant.components.http] legacy_api_password support has been enabled. If you don't require it, remove the 'api_password' from your http config.
-2018-12-09 00:11:13 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=14 from 2018-12-04 01:26:29.798073)
-2018-12-09 00:11:20 ERROR (MainThread) [homeassistant.components.sensor.yr] Retrying in 16 minutes: Cannot connect to host aa015h6buqvih86i1.api.met.no:443 ssl:None [Try again]
+2018-12-10 15:00:28 WARNING (MainThread) [homeassistant.components.http] legacy_api_password support has been enabled. If you don't require it, remove the 'api_password' from your http config.
+2018-12-10 15:20:16 ERROR (MainThread) [frontend.js.latest.201811033] :0:0 Script error.
+2018-12-10 15:20:46 ERROR (MainThread) [frontend.js.latest.201811033] :0:0 Script error.
+2018-12-10 15:24:58 ERROR (MainThread) [frontend.js.latest.201811033] :0:0 Script error.
+2018-12-10 15:28:10 ERROR (MainThread) [frontend.js.latest.201811033] :0:0 Script error.

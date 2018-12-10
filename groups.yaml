@@ -4,6 +4,8 @@ bedroom:
     entities:
       - light.luminaria_do_quarto
       - media_player.marcos_bedroom
+      - media_player.bedroom_tv
+      - switch.bedroom
     
 living_room:
     name: Sala de Estar
@@ -11,3 +13,4 @@ living_room:
     entities:
       - media_player.living_room_speaker
       - media_player.living_room_tv
+      - switch.livingroom

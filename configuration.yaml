@@ -112,6 +112,23 @@ ifttt:
 device_tracker:
   - platform: gpslogger
     password: !secret gpslogger_password
+    
+# Configuração das zonas no mapa
+zone:
+  - name: univates
+    latitude: -29.444921
+    longitude: -51.954886
+    radius: 250
+    icon: mdi:school
+  - name: home
+    latitude: -29.447146
+    longitude: -51.986468
+    radius: 250
+    icon: mdi:home
+    
+weather:
+  - platform: darksky
+    api_key: !secret darksky_key
 
 # Include dos arquivos auxiliares
 group: !include groups.yaml

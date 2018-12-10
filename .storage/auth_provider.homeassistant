@@ -3,8 +3,16 @@
         "salt": "3b96ac6908605ebdd17ff138a8530ebb997e25625742a0b5bf28f14de5afb8ff",
         "users": [
             {
-                "password": "JDJiJDEyJDA4TW1LN09nV3JhTDdaR0s3ZXVoUGUvRzZMeEJYS2thQVF3L1FyTG4yVVZGOWpLRDNIOEpL",
+                "password": "JDJiJDEyJEhRTTVwZmdyNjZwVHZQSk1aaklYTHVhYlNYdGVLalVqbU82czRaWEt5ZzNld3RWdEdQemFx",
                 "username": "admin"
+            },
+            {
+                "password": "JDJiJDEyJHB0UXlEWmVIVkYuUTFBZDRHN0Z4bi5GQXN4NVd0ZDhJbmIyMWllcGdLT2M1ZTFLUlE4djcu",
+                "username": "eduardo"
+            },
+            {
+                "password": "JDJiJDEyJGlaOEIzMGp6WlpLdFZuaS5GaWYwLnVhVGM4bzg5M3lKS1J2SVVLRUZTTVdlQ2pncUpsNUJh",
+                "username": "marco"
             }
         ]
     },

@@ -32,4 +32,11 @@ Maior parte das configurações do Home Assistant, como integrações, dispositi
 - o arquivo 'groups.yaml' define os grupos de dispositivos;  
 - o arquivo 'customize.yaml' define algumas customizações de entidades;  
   
-Mais informações sobre o Hass.io podem ser encontradas em: https://www.home-assistant.io/
+Mais informações sobre o Hass.io podem ser encontradas em: https://www.home-assistant.io/  
+  
+### Interface na Web  
+![InterfaceWeb](/HomeAssistant_Web_Interface..PNG)  
+  
+### Interface no Android  
+![InterfaceAndroid](/HomeAssistant_Android_Interface.png)  
+  
